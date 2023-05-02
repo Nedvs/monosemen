@@ -1,0 +1,119 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+      $('.slider').bxSlider({
+          mode: 'fade',//horizontal, vertical, fade
+          auto: true,
+          pause: 2000
+      });
+    });
+</script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+{% endblock %}
+
+{% block contenido %}
+
+<div class="slider">
+    <div>
+        <img src="{% static 'app/img/banner/banner4.png' %}" alt="">
+    </div>
+    <div>
+        <img src="{% static 'app/img/banner/banner5.png' %}" alt="">
+    </div>
+    <div>
+        <img src="{% static 'app/img/banner/banner6.png' %}" alt="">
+    </div>
+</div>
+
+<h2>Productos</h2>
+<div class="productos">
+
+<div class="producto">
+
+    <div class="contenedor_producto">
+
+        <img src="{% static 'app/img/guitarra.png' %}" alt="imagen producto">
+        <div class="detalle">
+            <h5>Greg Bennett</h5>
+            <h2>Guitarra Electrica</h2>
+            <h3>$379.990</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="producto">
+
+    <div class="contenedor_producto">
+
+        <img src="{% static 'app/img/bateria.png' %}" alt="imagen producto">
+        <div class="detalle">
+            <h5>ADW</h5>
+            <h2>Bateria</h2>
+            <h3>$399.990</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="producto">
+
+    <div class="contenedor_producto">
+
+        <img src="{% static 'app/img/teclado.png' %}" alt="imagen producto">
+        <div class="detalle">
+            <h5>Casio</h5>
+            <h2>Teclado</h2>
+            <h3>$359.990</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="producto">
+
+    <div class="contenedor_producto">
+
+        <img src="{% static 'app/img/bajo.png' %}" alt="imagen producto">
+        <div class="detalle">
+            <h5>Greg Bennett</h5>
+            <h2>Bajo</h2>
+            <h3>$349.990</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="producto">
+
+    <div class="contenedor_producto">
+
+        <img src="{% static 'app/img/violin.png' %}" alt="imagen producto">
+        <div class="detalle">
+            <h5>Gewa</h5>
+            <h2>Violin</h2>
+            <h3>$179.990</h3>
+        </div>
+
+    </div>
+    <br>
+
+</div>
+
+
+</div>
+
+{% endblock %}
